@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.header{
+    height: 106px;
+    background-color: var(--menu-bg);
+    
+}
+
+.menu{
+    padding: 31px 105px;
+    display: flex;
+    justify-content: space-between;
+}
+    
+.header__logo-link{
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 32px;
+    font-family: "Plain-Light", sans-serif;
+    line-height: 1.4;
+    padding-left: 16px;
+}
+
+.header__logo-link-span{
+    font-weight: 400;
+}
+
+.header__logo a:hover,
+.header__navbar a:hover{
+    color: var(--secondary-color);
+}
+
+.header__navbar{
+    line-height: 2.4;
+    display: flex;
+    align-items: center;
+}
+
+.header__navbar-menu{
+    display: flex;    
+    justify-content: space-around;
+    list-style-type: none;
+    font-family: "Plain-Light", sans-serif;
+    font-size: 15px;
+}
+
+.header__navbar-menu-link{
+    min-width: 120px;
+    height: 45px;
+    text-decoration: none;
+    padding: 8px 16px;
+    color: var(--white-color);
+    margin-left: 24px;
+}
+
+.header__navbar-menu-contact{
+    border: 2px solid var(--secondary-color);
+    border-radius: 30px;
+    padding:12px 32px ;
+    color: var(--secondary-color);
+    margin-right: 48px;
+    font-weight: 700;
+}
+
+.header__navbar-menu-contact:hover{
+    color: var(--white-color) !important;
+    background-color: var(--secondary-color);
+}
