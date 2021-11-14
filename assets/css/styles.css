@@ -19,7 +19,7 @@ html{
 }
 
 .menu{
-    padding: 31px 105px;
+    padding: 31px 0;
     display: flex;
     justify-content: space-between;
 }
@@ -90,7 +90,7 @@ html{
 }
 
 .hero__container{
-    padding: 80px 105px 0;
+    padding-top: 80px;
     display: flex;
     justify-content: space-between;
     
@@ -166,22 +166,21 @@ html{
 
 .hero__img-header{
     width: 80%;
-    margin-left: 32px;
 }
 
 .about{
+    align-items: center;
+}
+
+.about__body{
+    margin: 128px 105px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.about__body{
-    margin-top: 128px;
-    
-}
-
 .about__heading{
-    width: 635px;
+    width: 50%;
 }
 
 .about__heading-div{
@@ -219,11 +218,12 @@ html{
 }
 
 .about__img{
-    width: 100%;
+    width: 50%;
 }
 
 .about__img-office{
-    width: 635px;
+    width: 100%;
+    margin-bottom: 0;
 }
 
 .project{
@@ -234,7 +234,7 @@ html{
 }
 
 .project__header{
-    width: 422px ;
+    width: 30% ;
     margin: 124px 0;
     font-size: 32px;
     color: #666262;
@@ -290,7 +290,7 @@ html{
 }
 
 .footer__body{
-    padding: 112px 105px;
+    padding: 112px 120px 112px 200px;
     display: flex;
     flex-direction: column;
     
@@ -324,9 +324,10 @@ html{
 
 .footer__contact-studio-adress{
     line-height: 1.6;
+    margin-top: 28px;
 }
 
-.footer__contact-studio-adress,
+
 .footer__contact-info-phone
 {
     margin-top: 32px;
@@ -346,11 +347,11 @@ html{
 }
 
 .footer__contact-studio{
-    padding-left: 150px;
+    /* padding-left: 150px; */
 }
 
 .footer__contact-info{
-    padding-left: 190px;
+    margin:0 56px 0 100px;
 }
 
 .footer__contact-info-phone,
