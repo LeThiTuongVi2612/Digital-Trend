@@ -12,37 +12,23 @@
 </head>
 <body>
     <div class="main">
-        <div class="header">
-            <div class="menu ml-105 mb-mt-0">
+        <div class="header mb-mt-0 magin_left_right_0" id="header">
+            
                 <div class="header__logo">
                     <a href="#" class="header__logo-link">
                         <i class="fas fa-chart-line"></i>
                         <span class="header__logo-link-span">
                             Digital Trend
                         </span>
-                        
                     </a>
-                </div>
-
-                <div class="icon__header">
-                    <a href="">
+                    
+                    <!-- mobile menu -->
+                    <div class="icon__header" id="mobile-menu">
                         <i class="fas fa-bars"></i>
-                        
-                    </a>
-                    <!-- position: absolute;
-    right: 0;
-    top: 87
-px
-;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    line-height: 3;
-    background-color: #0c8195; -->
+                    </div>
                 </div>
 
+                        
                 <div class="header__navbar">
                     <ul class="header__navbar-menu">
                         <li>
@@ -59,12 +45,12 @@ px
                         </li>
                     </ul>
                 </div>
-            </div>
+            
         </div>
 
         <div class="container">
             <div class="hero ">
-                <div class="hero__container ml-105 mb-mt-0">
+                <div class="hero__container ml-105 mb-mt-0 tablet-mt-16">
                     <div class="hero__header">
                         <div class="hero__header-heading">
                             <h3 class="hero__header-heading-font">
@@ -139,25 +125,28 @@ px
             <div class="footer__body mb-mt-16">
                 <div class="footer__body-up">
                     <div class=" footer__header">We make creative <span class="footer__heading-font">brands</span> only.</div>
-                    <div class="ft footer__contact-info">
-                        <div class="footer__contact">
-                            CONTACT INFO
+                    <div class="footer__info-email">
+                        <div class="ft footer__contact-info">
+                            <div class="footer__contact">
+                                CONTACT INFO
+                            </div>
+                            <div class="footer__info-email"></div>
+                            <div class="footer__contact-info-phone">
+                                <i class="fas fa-phone footer__contact-background"></i>
+                                <a href="tel:+99 080 070 4224" class="footer__design" >+99 080 070 4224</a>
+                            </div>
+                            <div class="footer__contact-info-email">
+                                <i class="fas fa-envelope footer__contact-background"></i>
+                                <a href="mailto:hello@company.com"  class="footer__design">hello@company.com</a>
+                            </div>
                         </div>
-                        <div class="footer__contact-info-phone">
-                            <i class="fas fa-phone footer__contact-background"></i>
-                            <a href="tel:+99 080 070 4224" class="footer__design" >+99 080 070 4224</a>
-                        </div>
-                        <div class="footer__contact-info-email">
-                            <i class="fas fa-envelope footer__contact-background"></i>
-                            <a href="mailto:hello@company.com"  class="footer__design">hello@company.com</a>
-                        </div>
-                    </div>
-                    <div class="ft footer__contact-studio">
-                        <div class="footer__contact">OUR STUDIO</div>
-                        <div class="footer__contact-studio-adress">
-                            <i class="fas fa-home footer__contact-background"></i>
-                            Av. Lúcio Costa - Barra da Tijuca, Rio de Janeiro - RJ, Brazil
-                        </div>
+                        <div class="ft footer__contact-studio">
+                            <div class="footer__contact">OUR STUDIO</div>
+                            <div class="footer__contact-studio-adress">
+                                <i class="fas fa-home footer__contact-background"></i>
+                                Av. Lúcio Costa - Barra da Tijuca, Rio de Janeiro - RJ, Brazil
+                            </div>
+                        </div>       
                     </div>
                 </div>
                 <div class="footer__body-down">
@@ -165,21 +154,52 @@ px
                         <span>Copyright © 2020 Your Company</span>
                         <a href="" class="footer__design">Design: TemplateMo</a>
                     </div>
-                    <div class="ft footer__contact-story">
+                    <div class="footer__social">
+                        <div class=" footer__contact-story">
                         <a href="" class="footer__design footer__space">Stories</a>
                         <a href="" class="footer__design footer__space">Work with us</a>
                         <a href="" class="footer__design footer__space">Privacy</a>
                     </div>
-                    <div class="ft footer__contact-icon ">
+                    <div class=" footer__contact-icon ">
                         <i class="fab fa-instagram footer__design footer__space"></i>
                         <i class="fab fa-twitter footer__design footer__space"></i>
                         <i class="fab fa-dribbble footer__design footer__space"></i>
                         <i class="fab fa-behance footer__design footer__space"></i>
                     </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
     </div>
     
+    <!-- js header mobile + tablet -->
+    <script>
+
+        var header = document.getElementById('header');
+        var mobile_menu = document.getElementById('mobile-menu');
+        var headerHeight = header.clientHeight;
+
+         // đóng mở mobile + tablet menu -->
+        mobile_menu.onclick = function(){
+            var isClose = header.clientHeight == headerHeight;
+            if(isClose){
+                header.style.height = 'auto';
+            }
+            else{
+                header.style.height = null;
+            }
+        } 
+        // tự động đóng khi chọn menu
+        var menuItems = document.querySelectorAll('.header__navbar-menu li a[href*="#"]');
+        for(var i = 0; i<menuItems.length; i++){
+            var menuItem = menuItems[i];
+
+            menuItem.onclick = function(){
+                header.style.height = null;
+            }
+        }
+
+    </script>
 </body>
 </html>

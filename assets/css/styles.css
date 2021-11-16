@@ -5,6 +5,7 @@
 }
 
 html{
+    scroll-behavior: smooth;
     font-family: "Plain-Light", sans-serif;
     
 }
@@ -12,6 +13,10 @@ html{
 .header{
     height: 106px;
     background-color: var(--menu-bg);
+    padding: 32px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     /* position: fixed;
     top: 0;
     right: 0;
@@ -78,6 +83,11 @@ html{
 .header__navbar-menu-contact:hover{
     color: var(--white-color) !important;
     background-color: var(--secondary-color);
+}
+
+.header__logo{
+    display: flex;
+    flex-direction: row;
 }
 
 .container{
@@ -304,7 +314,7 @@ html{
 }
 
 .ft{
-    width: 33.3333%;
+    width: 35.3333%;
 }
 
 .footer__header{
@@ -377,7 +387,7 @@ html{
 
 
 .footer__contact-icon{
-    width: 30%;
+    width: 40%;
     text-align: right;
 }
 
@@ -389,4 +399,14 @@ html{
 
 .footer__space{
     padding: 0 8px;
+}
+
+.footer__info-email{
+    display: flex;
+}
+
+.footer__social{
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
 }
