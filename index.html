@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Trend</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/flickity.css">
+    <link rel="icon" href="https://img.icons8.com/ultraviolet/40/000000/ninja-turtle.png" type="image/gif" sizes="16x16">
+    <script src="./assets/js/flickity-docs.min.js"></script>
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
@@ -104,6 +107,89 @@
                 <div class="project__header ml-105 mb-mt-16">
                     Please take a look through our <span class="about__heading-font">featured Digital Trends</span>
                 </div>
+                <div class="carousel" data-flickity='{ "autoPlay":true, "pauseAutoPlayOnHover": false, "wrapAround": true }'>
+                    <div class="carousel-cell">
+                        <img src="./assets/img/project-image01.jpg" alt="img-01" class="img__slider-project">
+                        <div class="message__slider">
+                            <div class="message__header">
+                                <div class="message__header-01">
+                                    Marketing
+                                </div>
+                                <a href="" class="message__header-02">
+                                    Sweet Go Agency
+                                </a>
+                            </div>
+                            <a href="" class="message-icon">
+                                <i class="fas fa-angle-right message-icon-img-slider"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="./assets/img/project-image02.jpg" alt="img-01" class="img__slider-project">
+                        <div class="message__slider">
+                            <div class="message__header">
+                                <div class="message__header-01">
+                                    Website
+                                </div>
+                                <a href="" class="message__header-02">
+                                    Smart Ladies
+                                </a>
+                            </div>
+                            <a href="" class="message-icon">
+                                <i class="fas fa-angle-right message-icon-img-slider"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="./assets/img/project-image03.jpg" alt="img-01" class="img__slider-project">
+                        <div class="message__slider">
+                            <div class="message__header">
+                                <div class="message__header-01">
+                                    Branding
+                                </div>
+                                <a href="" class="message__header-02">
+                                    Shoes factory
+                                </a>
+                            </div>
+                            <a href="" class="message-icon">
+                                <i class="fas fa-angle-right message-icon-img-slider"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="./assets/img/project-image04.jpg" alt="img-01" class="img__slider-project">
+                        <div class="message__slider">
+                            <div class="message__header">
+                                <div class="message__header-01">
+                                    Social Media
+                                </div>
+                                <a href="" class="message__header-02">
+                                    Race Bicycle
+                                </a>
+                            </div>
+                            <a href="" class="message-icon">
+                                <i class="fas fa-angle-right message-icon-img-slider"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="./assets/img/project-image05.jpg" alt="img-01" class="img__slider-project">
+                        <div class="message__slider">
+                            <div class="message__header">
+                                <div class="message__header-01">
+                                    Video
+                                </div>
+                                <a href="" class="message__header-02">
+                                    Ultimate HealthCare
+                                </a>
+                            </div>
+                            <a href="" class="message-icon">
+                                <i class="fas fa-angle-right message-icon-img-slider"></i>
+                            </a>
+                        </div>     
+                    </div>
+                </div>
             </div>
 
             <div class="testimonial">
@@ -200,6 +286,16 @@
             }
         }
 
+    </script>
+
+    <script>
+        $("#mySlider").ionImageSlider();
+        $("#mySlider").ionImageSlider({
+            zoomText: "Увеличить",                  // text near zoom icon; set "", if don't need
+            startFrom: 0,                           // # of start picture
+            slideShow: true,                        // enable slide show
+            slideShowDelay: 2                       // pause between picture change (if slide show is on)
+        });
     </script>
 </body>
 </html>

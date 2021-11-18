@@ -41,6 +41,17 @@
         padding: 0 32px;
         text-align: center;
     }
+
+
+    .carousel-cell{
+        height: 380px;
+    }
+
+    .message__slider {
+        width: 90%;
+        margin-left: 36px;
+    }
+
     .testimonial__body {
         margin: 128px 48px;
     }
@@ -126,6 +137,8 @@
     .about__heading-div{
         width: 100%;
     }
+
+    
 
     .footer__body{
         padding: 112px 0 112px 32px;
@@ -228,6 +241,25 @@
         padding-left: 0;
     }
 
+    .carousel-cell{
+        height: 478px;
+    }
+
+    .carousel{
+        padding: 0;
+    }
+
+    .message__slider {
+        bottom: 254px;
+        padding: 8px 16px;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .flickity-page-dots{
+        bottom: 200px;
+    }
+
     .footer__body-down, 
     .footer__body-up{
         flex-direction: column;
@@ -269,4 +301,10 @@
         flex-direction: column;
         width: 100%;
     }
+
+    .footer__contact-icon{
+        width: 100%;
+    }
+
+    
 }
