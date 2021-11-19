@@ -50,6 +50,7 @@
     .message__slider {
         width: 90%;
         margin-left: 36px;
+        
     }
 
     .testimonial__body {
@@ -251,13 +252,17 @@
 
     .message__slider {
         bottom: 254px;
-        padding: 8px 16px;
+        padding: 8px 18px;
         width: 100%;
         margin-left: 0;
     }
 
     .flickity-page-dots{
         bottom: 200px;
+    }
+
+    .message-icon-img-slider{
+        padding-left: 11px;
     }
 
     .footer__body-down, 
